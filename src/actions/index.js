@@ -8,11 +8,7 @@ const ROOT_URL = 'https://reduxblog.herokuapp.com/api';
 const API_KEY = '?key=PAPERCLIP4321';
 
 export function fetchPosts(){
-  const request = axios.get(`${ROOT_URL}/posts${API_KEY}`)
-    .then((result) => {
-      console.log("done", result);
-    });
-
+  const request = axios.get(`${ROOT_URL}/posts${API_KEY}`);
   return {
     type: FETCH_POSTS,
     payload: request

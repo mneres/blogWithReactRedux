@@ -24,7 +24,6 @@ class PostsShow extends Component {
 }
 
 function mapStateToProps({ posts }, ownProps){
-  console.log(ownProps.match.params.id)
   return { post: posts[ownProps.match.params.id] };
 }
 

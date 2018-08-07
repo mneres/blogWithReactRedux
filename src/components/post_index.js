@@ -20,12 +20,9 @@ class PostsIndex extends Component {
   }
 
   render(){
-    console.log("okay");
     if(!this.props.posts){
-      console.log("ok");
       return <div>Loading...</div>
     }
-    console.log("haha");
     return (
       <div>
         <div className="text-xs-right">
@@ -43,7 +40,6 @@ class PostsIndex extends Component {
 }
 
 const mapStateToProps = (state) => {
-  console.log("state", state);
   return {
     posts: state.posts
   };
